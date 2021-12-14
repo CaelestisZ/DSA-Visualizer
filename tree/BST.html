@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<script src="../jquery.js"></script>
+	<script src="../index.js"></script>
+	<script type = "application/javascript" src = "../js/AnimationManager.js"> </script>
+    <script type = "application/javascript" src = "../js/ObjectManager.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedObject.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedCircle.js"> </script>
+	<script type = "application/javascript" src = "../js/AnimatedHighlightCircle.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedLine.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedRectangle.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedPointer.js"> </script>
+	<script type = "application/javascript" src = "../js/AnimatedHighlightRectangle.js"> </script>
+    <script type = "application/javascript" src = "../js/Algorithm.js"> </script>
+    <script type = "application/javascript" src = "../js/BinarySearchTree.js"> </script>
+	<link rel="stylesheet" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/sort.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/tree.css" />
+	<!-- <link rel="shortcut icon" href="../favicon.ico" /> -->
+	<title>Binary Search Tree</title>
+	<script>
+          var type=0;
+          var index;
+	</script>
+</head>
+<body onload="init();ini();">
+	<div class="mainSub">
+		<div class="header">
+			<!-- <img class="logo" src="../image/logo.png" alt="logo" onclick="window.location.href='../index.html'" /> -->
+			<div class="navList">
+					<a href="../index.html" class="nav" style="text-decoration: none;">Home</a>
+			        <a href="BST.html" class="nav selected" style="text-decoration:none;">BST</a>
+			        <a href="heap.html" class="nav" style="text-decoration:none;">Heap</a>
+			        
+			        <a href="avlTree.html" class="nav" style="text-decoration:none;">AVL Tree</a>
+			        <!-- <a href="BT2T.html" class="nav" style="text-decoration:none;">Binary Tree Conversion</a> -->
+			</div>
+		</div>
+		<div class="showBox" width="1000" height="500" style="overflow: scroll;">
+		   <canvas id="drawing"  width="2000" height="1000">Canvas</canvas>
+		</div>
+		<div class="treeStartHide">
+			<img src="../image/arrow_white_right.png" alt="" />
+		</div>
+		<div class="bstTreeStarts">
+			<p class="s1">Node operations</p>
+		</div>
+		<div class="bstTreeNum subB1">
+			<span>Numeric value</span>
+			<input type="text" class="bstTreeNumber"/>
+		</div>
+		<div class="bstTreeInsert subB1">
+			<p>Insert</p>
+		</div>
+		<div class="bstTreeSearch subB1">
+			<p>Find</p>
+		</div>
+		<div class="bstTreeDelete subB1">
+			<p>Delete</p>
+		</div>
+		<div class="stateHide">
+			<img src="../image/arrow_white_right.png" alt="" />
+		</div>
+		<div class="state">
+			<p>Only digits supported. No letters / strings.</p>
+		</div>
+
+	    <div class="controlBar">
+	    	<input type="range" name="controlSlider" id="controlSlider"  min="1" max="100" value="60" onchange="setAnimationSpeed(this.value);" />
+	    </div>
+	</div>
+
+</body>
+</html>

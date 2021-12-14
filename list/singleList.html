@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <script src="../jquery.js"></script>
+	<script src="../index.js"></script>
+	<script type = "application/javascript" src = "../js/AnimationManager.js"> </script><!-- nodes, head/tail pointer and top-right text won't be visible-->
+    <script type = "application/javascript" src = "../js/ObjectManager.js"> </script> <!-- nodes, head/tail pointer and top-right text won't be visible-->
+    <script type = "application/javascript" src = "../js/AnimatedObject.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedCircle.js"> </script>
+    <script type = "application/javascript" src = "../js/AnimatedLine.js"> </script> <!-- no connecting line between nodes during insertion-->
+    <script type = "application/javascript" src = "../js/AnimatedRectangle.js"> </script> <!-- node 0 with head and tail pointer won't be visible if excluded-->
+    <script type = "application/javascript" src = "../js/AnimatedPointer.js"> </script> <!-- node 0 with head and tail pointer won't be visible if excluded -->
+    <script type = "application/javascript" src = "../js/AnimatedLabel.js"> </script> 
+    <script type = "application/javascript" src = "../js/Algorithm.js"> </script>  <!-- required import -->
+    <script type = "application/javascript" src = "../js/LinkedList.js"> </script> <!-- required import -->
+	<link rel="stylesheet" href="../css/index.css" />
+	<!-- <link rel="shortcut icon" href="../favicon.ico" /> -->
+	<title>Singly Linked List</title>
+	<script>
+          var type=0;
+          var index;
+	</script>
+</head>
+<body onload="init();ini();">
+	<div class="mainSub">
+		<div class="header">
+			<!-- <img class="logo" src="../image/DSAViz2.png" alt="logo" onclick="window.location.href='../index.html'" /> -->
+			<div class="navList">
+				<a href="../index.html" class="nav" style="text-decoration: none;">Home</a>
+				<a href="singleList.html" class="nav selected" style="text-decoration:none;">Singly Linked List</a>
+				<a href="stackList.html" class="nav" style="text-decoration:none;">Stack</a>
+				<a href="queueList.html" class="nav"style="text-decoration:none;">Queue</a>
+			</div>
+		</div>
+		<div class="showBox" width="1000" height="500" style="overflow: scroll;">
+		   <canvas id="drawing" width="2000" height="1000">Canvas</canvas>
+		</div>
+		<div class="singleStartHide">
+			<img src="../image/arrow_white_right.png" alt="" />
+		</div>
+		<div class="singleStarts">
+			<p class="insert r1">Insert</p>
+			<p class="delete r2">Delete</p>
+		</div>
+		<div class="singleSerialNumber subT1"> 
+			<span>Index Number</span>
+			<input type="text" class="singleSerial"/>
+		</div>
+		<div class="singleInsertNumber subT1">
+			<span>Numeric Value</span>
+			<input type="text" class="singleInputNumber"/>
+		</div>
+		<div class="singleInsert subT1">
+			<p>Insert!</p>
+		</div>
+		<div class="singleDeleteNumber subT2">
+			<span>Delete</span>
+			<input type="text" class="singleDelNumber"/>
+		</div>
+		<div class="singleDelete subT2">
+			<p>Delete!</p>
+		</div> 
+		<div class="stateHide">
+			<img src="../image/arrow_white_right.png" alt="" />
+		</div>
+		<div class="state">
+			<p></p>
+		</div>
+	    <div class="controlBar">
+	    	<input type="range" name="controlSlider" id="controlSlider"  min="1" max="100" value="60" onchange="setAnimationSpeed(this.value);" />
+	    </div>
+	</div>
+</body>
+</html>

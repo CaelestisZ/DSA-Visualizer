@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>DSAViz</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- <link rel="shortcut icon" href="favicon.ico" /> -->
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img
+          class="logo"
+          src="image/DSAViz2.png"
+          alt="DSAViz logo"
+          onclick="window.location.href='index.html'"
+        />
+      </div>
+      <div class="arithmetic">
+        <div class="arithmeticList gradient-border">
+          <div class="pictureAndDes">
+            <img src="image/sort.jpg" alt="Sorting" class="picture" />
+            <p class="description">Sorting Algorithms</p>
+          </div>
+          <div class="buttonList">
+            <button
+              type="button"
+              class="btn btn-primary sortBtn"
+              id="compareSort"
+              onclick="window.location.href='sort_with_tracing/index.html'"
+            >
+              Sorting Algorithms
+            </button>
+<!--             <button
+              type="button"
+              class="btn btn-primary sortBtn"
+              id="compareSort"
+              onclick="window.location.href='sort/compareSort.html'"
+            >
+              Compare Sort
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary sortBtn"
+              id="radixSort"
+              onclick="window.location.href='sort/radixSort.html'"
+            >
+              Radix Sort
+            </button> -->
+<!--             <button
+              type="button"
+              class="btn btn-primary sortBtn"
+              id="heapSort"
+              onclick="window.location.href='sort/heapSort.html'"
+            >
+              Heap Sort
+            </button> -->
+          </div>
+        </div>
+        <div class="arithmeticList gradient-border">
+          <div class="pictureAndDes">
+            <img
+              src="image/linear_ds.jpg"
+              alt="Linear Data Structures"
+              class="picture"
+            />
+            <p class="description">Linear Data Structures</p>
+          </div>
+          <div class="buttonList">
+            <button
+              type="button"
+              id="singleList"
+              class="btn btn-primary btn-sm lineBtn"
+              onclick="window.location.href='list/singleList.html'"
+            >
+              SLL
+            </button>
+            <button
+              type="button"
+              id="stackList"
+              class="btn btn-primary btn-sm lineBtn"
+              onclick="window.location.href='list/stackList.html'"
+            >
+              Stack
+            </button>
+            <button
+              type="button"
+              id="queueList"
+              class="btn btn-primary btn-sm lineBtn"
+              onclick="window.location.href='list/queueList.html'"
+            >
+              Queue
+            </button>
+          </div>
+        </div>
+        <div class="arithmeticList gradient-border">
+          <div class="pictureAndDes">
+            <img src="image/trees.jpg" alt="Trees" class="picture" />
+            <p class="description">Trees</p>
+          </div>
+          <div class="buttonList">
+            <button
+              type="button"
+              class="btn btn-primary treeBtn"
+              onclick="window.location.href='tree/BST.html'"
+            >
+              BST
+            </button>
+            <button
+              type="button"
+              id="heap"
+              class="btn btn-primary treeBtn"
+              onclick="window.location.href='tree/heap.html'"
+            >
+              Heap
+            </button>
+
+            <button
+              type="button"
+              id="avlTree"
+              class="btn btn-primary treeBtn"
+              onclick="window.location.href='tree/avlTree.html'"
+            >
+              AVL
+            </button>
+<!--             <button
+              type="button"
+              id="BT2T"
+              class="btn btn-primary treeBtn"
+              onclick="window.location.href='tree/BT2T.html'"
+            >
+              Convert Tree <-> Binary Tree
+            </button> -->
+          </div>
+        </div>
+        <div class="arithmeticList gradient-border">
+          <div class="pictureAndDes">
+            <img src="image/graph.jpg" alt="Graphs" class="picture" />
+            <p class="description">Graphs</p>
+          </div>
+          <div class="buttonList">
+            <button
+              type="button"
+              id="graphDFSTraverse"
+              class="btn btn-primary graphBtn"
+              onclick="window.location.href='graph/graphDFSTraverse.html'"
+            >
+              DFS
+            </button>
+            <button
+              type="button"
+              id="graphBFSTraverse"
+              class="btn btn-primary graphBtn"
+              onclick="window.location.href='graph/graphBFSTraverse.html'"
+            >
+              BFS
+            </button>
+            <button
+              type="button"
+              id="prim"
+              class="btn btn-primary graphBtn"
+              onclick="window.location.href='graph/prim.html'"
+            >
+              Prim
+            </button>
+            <button
+              type="button"
+              id="kruskal"
+              class="btn btn-primary graphBtn"
+              onclick="window.location.href='graph/kruskal.html'"
+            >
+              Kruskal
+            </button>
+            <button
+              type="button"
+              id="dijkstra"
+              class="btn btn-primary graphBtn"
+              onclick="window.location.href='graph/dijkstra.html'"
+            >
+              Dijkstra
+            </button>
+
+          </div>
+        </div>
+        
+        <div class="arithmeticList gradient-border">
+          <div class="pictureAndDes">
+            <img
+              src="image/strings.png"
+              alt="String Operations"
+              class="picture"
+            />
+            <p class="description">Miscellaneous</p>
+          </div>
+          <div class="buttonList">
+            <button
+              type="button"
+              class="btn btn-primary string"
+              id="patternMatch"
+              onclick="window.location.href='string/patternMatch.html'"
+            >
+              Pattern Match
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="sequentialSearch"
+              onclick="window.location.href='string/search.html'"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
